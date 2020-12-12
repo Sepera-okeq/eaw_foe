@@ -1,0 +1,81 @@
+scripted_gui = {
+    new_open_button = {
+        context_type = player_context
+        window_name = "new_open_button"
+        #parent_window_token = politics_tab
+
+        visible = {
+            has_war = yes
+        }
+
+        effects = {
+            es_open_button_bg_click = {
+                if = { 
+                    limit = { NOT = { has_country_flag = open_my_new_gui } } 
+                    set_country_flag = open_my_new_gui
+                }
+                else = {
+                    clr_country_flag = open_my_new_gui
+                }
+                if = {
+                    limit = { NOT = { check_variable = { white_peace_check_var = 1 } } }
+                    set_variable = { white_peace_check_var = 0 }
+                }
+                
+            }
+        }
+    }
+
+  new_scripted_gui = {
+    window_name = "new_scripted_gui_window"
+    context_type = player_context
+
+    visible = {
+		has_country_flag = open_my_new_gui
+    }
+
+    effects = {
+        close_button_click = {
+            clr_country_flag = open_my_new_gui
+        }
+        white_peace_checkbox_off_click = {
+            set_variable = { white_peace_check_var = 1 }
+        }
+        white_peace_checkbox_on_click = {
+            set_variable = { white_peace_check_var = 0 }
+        }
+    }
+
+    triggers = {
+        white_peace_checkbox_on_visible = {
+            check_variable = { white_peace_check_var = 1 }
+        }
+
+        white_peace_checkbox_off_visible = {
+            NOT = { check_variable = { white_peace_check_var = 1 } }
+        }
+    }
+
+    dynamic_lists = {
+	}
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}

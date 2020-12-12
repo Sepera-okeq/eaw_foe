@@ -1,0 +1,133 @@
+guiTypes = {
+	containerWindowType = {
+		name = "new_open_button"
+		position = { x = -100 y = -395 }
+		size = { width=100 height=100 }
+		orientation = LOWER_RIGHT
+		fade_time = 100
+
+
+		buttonType ={
+			name ="es_open_button_bg"
+			spriteType = "GFX_peace_deal_icon"
+			position = { x=0 y=0 }
+			pdx_tooltip = "OPEN_PEACE"
+		}
+		#iconType ={
+		#	name ="surrender_prog_bg"
+		#	spriteType = "GFX_surrender_prog_bg"
+		#	position = { x = 26 y = 77 }
+		#}
+		instantTextboxType = {
+			name = "peace_deal_capitulation"
+			position = { x = -13 y = 30 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			Orientation = CENTER
+			text = "peace_deal_capitulation_loc"
+			maxWidth = 55
+			maxHeight = 55
+			fixedsize = yes
+		}		
+		
+	}
+
+	containerWindowType = {
+		name = "new_scripted_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 672 height= 580 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_peace_deal_window_background"
+		}
+
+		buttonType ={
+			name ="close_button"
+			spriteType = "GFX_closebutton"
+			position = { x= 577 y = 57 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		containerWindowType = {
+			name = "peace_deal_options_slider"
+			position = { x=110 y=187 }
+			size = { width=453 height=150 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 4 }
+			smooth_scrolling = yes
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_blank"
+			}
+
+			buttonType ={
+				name ="peace_option_1_bg"
+				spriteType = "GFX_peace_list_button_blue"
+				position = { x = 0 y = 0 }
+			}
+
+			buttonType ={
+				name ="peace_option_2_bg"
+				spriteType = "GFX_peace_list_button_blue"
+				position = { x = 0 y = 30 }
+			}
+
+			buttonType ={
+				name ="peace_option_3_bg"
+				spriteType = "GFX_peace_list_button_blue"
+				position = { x = 0 y = 60 }
+			}
+
+			buttonType ={
+				name ="peace_option_4_bg"
+				spriteType = "GFX_peace_list_button_blue"
+				position = { x = 0 y = 90 }
+			}
+
+			buttonType ={
+				name ="peace_option_5_bg"
+				spriteType = "GFX_peace_list_button_blue"
+				position = { x = 0 y = 120 }
+			}
+
+			buttonType ={
+				name ="peace_option_6_bg"
+				spriteType = "GFX_peace_list_button_blue"
+				position = { x = 0 y = 150 }
+			}
+	
+			#instantTextboxType = {
+			#	name = "tab_1_text"
+			#	position = { x=0 y=0 }
+			#	font = "hoi_20bs"
+			#	text = "EAW_WS_TAB_1_TXT"
+			#	maxWidth = 437
+			#	maxHeight = 150
+			#	#fixedsize = yes
+			#	scrollbartype = "standardtext_slider"
+			#}
+		}
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+}

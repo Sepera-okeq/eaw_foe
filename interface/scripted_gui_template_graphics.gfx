@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_peace_deal_window_background"
+		textureFile = "/gfx/interface/gui/peace_deal/peace_demand_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_close_button"
+		textureFile = "/gfx/interface/gui/peace_deal/close_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_at_war_icon"
+		textureFile = "/gfx/interface/gui/peace_deal/at_war_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_peace_deal_icon"
+		textureFile = "/gfx/interface/gui/peace_deal/peace_deal_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_peace_list_button_blue"
+		textureFile = "/gfx/interface/gui/peace_deal/peace_list_button_blue.tga"
+	}
+	
+}
