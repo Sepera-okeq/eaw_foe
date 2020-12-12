@@ -61,6 +61,11 @@ on_actions = {
     				value = 0
 				}
  			}
+
+ 			RED = {
+				clear_array = marked_states_array
+				#add_to_array = { marked_states_array = 558 }
+			}
 		}
 	}
 
